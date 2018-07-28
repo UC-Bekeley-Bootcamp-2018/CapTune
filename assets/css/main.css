@@ -1,0 +1,261 @@
+body {
+    font-family: 'Monoton', cursive;
+    background-color: white;
+    margin: inherit;
+}
+
+.venue-address {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#mapid2{
+    height: 550px; width:950px;
+}
+
+.list-items-color {
+    background-color: rgba(231, 245, 253, 0.7);
+}
+
+.head-img-wrapper {
+    /* background-image: url('../img/bg-masthead.jpg');
+    background-size: cover; */
+    width: 100%;
+    /* height: 566px; */
+}
+
+.head-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 566px;
+    filter: brightness(.8);
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    height: 35rem;
+}
+
+.title-wrapper {
+    position: absolute;
+    top: 23%;
+    width: 80%;
+    margin-left: 10%;
+    flex-direction: column;
+}
+
+.title-wrapper h1 {
+    font-size: 49px;
+    text-align: center;
+    letter-spacing: 7px;
+    font-weight: 350;
+}
+
+.navbar-add {
+    height: 62px;
+    padding: 0 14px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.navbar h2 {
+    font-family: sans-serif;
+    font-size: 23px;
+    margin-bottom: 0;
+    color: rgb(66, 119, 249);
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+.nav-item-wrapper {
+    display: flex;
+}
+
+.navitems {
+    text-decoration: none;
+    font-family: sans-serif;
+    /* color: #777777; */
+    margin: 0;
+    color: rgba(4, 4, 4, 0.44);
+}
+
+.btn-warning {
+    /* height: 44px; */
+    font-size: 24px;
+    font-weight: 300;
+    width: 154px;
+    /* height: 78px; */
+    color: #212529;
+    background-color: #1c69f5;
+    border-color: #9fbeff;
+    color: white;
+    margin-top: 14px;
+    margin-bottom: 19px;
+    margin-left: 6px;
+}
+
+.container-addition {
+    margin-top: 30px;
+}
+
+.list-items {
+    background-color: rgb(228, 233, 236);
+}
+
+.text-format {
+    text-align: center;
+}
+
+.body-text {
+    font-family: 'Monoton', cursive;
+    font-family: 'Coustard', serif;
+}
+
+.footer-text {
+    font-family: 'Monoton', cursive;
+    font-family: 'Coustard', serif;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Atomic Age', cursive;
+}
+
+.form-wrapper {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.form-attribute {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#mapid { 
+    height: 300px; width:300px; 
+}
+
+p {
+    padding-left:2rem;
+}
+
+.contact {
+    margin-top: 12rem;
+    position: absolute;
+}
+
+.head-jumbo .jumbotron {
+    background-image: url(bg-masthead.jpg);
+    border-radius: 0;
+    /* height:400px; */
+}
+
+
+   /* Insertion------------------------------------- */
+   /*Contact sectiom*/
+.content-header { 
+  font-family: 'Oleo Script', cursive;
+  color:#fcc500;
+  font-size: 45px;
+}
+
+.section-content {
+  text-align: center; 
+
+}
+
+#contact {
+    font-family: 'Teko', sans-serif;
+    padding-top: 60px;
+    width: 100%;
+    width: 100vw;
+    height: 550px;
+    background-color: rgb(108, 106, 250);
+    /* background: -webkit-linear-gradient(to left, #3a6186 , #89253e); Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to left, #3a6186 , #89253e); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color : #fff;    
+}
+
+.contact-section {
+  padding-top: 40px;
+}
+
+.contact-section .col-md-6 {
+  width: 50%;
+}
+
+.form-line-left {
+  border-left: 1px solid #B29999;
+}
+
+.form-line {
+    border-right: 1px solid #B29999;
+}
+
+.form-group {
+  margin-top: 10px;
+  padding:0.25rem;
+}
+
+label {
+  font-size: 1.3em;
+  line-height: 1em;
+  font-weight: normal;
+}
+ 
+.form-control {
+  font-size: 1.3em;
+  color: #080808;
+  padding:.5rem;
+}
+
+textarea.form-control {
+    height: 135px;
+   /* margin-top: px;*/
+}
+
+.submit {
+  font-size: 1.1em;
+  float: right;
+  width: 150px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.navbar {
+    padding:0;
+}
+
+/* -----------------------------------------------Insertion ends */
+
+
+.font-fashion {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-form {
+    margin-bottom: 0;
+}
+
+.address {
+    margin-left: 20px;
+}
