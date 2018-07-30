@@ -20,6 +20,7 @@ $(document).ready(function() {
 
     // When user enters the information and clicks the button 
     $("#picture").empty();
+
     $('#sendform').click(function(event) { 
         event.preventDefault();
         if ($("#artist-name").val() == "" && $("#location").val() == "" && $("#date").val() == "" ) {
@@ -92,9 +93,9 @@ $(document).ready(function() {
     function getParameter() {
         //reading value from the form
         // these variables are already decalred on top *** GLOBAL Variable****
-        artist=$("#artist-name").val().trim();
-        location=$("#location").val().trim();
-        date=$("#date").val();
+        artist = $("#artist-name").val().trim();
+        location = $("#location").val().trim();
+        date = $("#date").val();
 
         // a local variable Parameter
         var parameter="";
@@ -104,6 +105,7 @@ $(document).ready(function() {
         $("#location").val("");
         $("#date").val("");
 
+        // THis part is problem!!!!!!!!////////////////////////////////////////////
             if(artist!=="") {
                 parameter=parameter+"&keywords="+artist;
                 musixmatch();
@@ -120,7 +122,7 @@ $(document).ready(function() {
     function musixmatch() {
         var url="http://api.musixmatch.com/ws/1.1/track.search?apikey=ca4466429fdf97191afe3158735bd7ef&q_artist=";
         var queryURL="https://cors-anywhere.herokuapp.com/"+url+artist+"&page_size=1&page=1&s_track_rating=desc";
-        console.log('queryURL1', queryURL);
+        // console.log('queryURL1', queryURL);
         $.ajax({
             url: queryURL,
             method: 'GET',
@@ -128,7 +130,7 @@ $(document).ready(function() {
         }).then(function(response) { 
             // console.log('response response', response);
             var res = JSON.parse(response);
-            console.log('res', res);
+            // console.log('res', res);
                 if(res.message.body.track_list[0].track.has_lyrics==1) {
                     $(".artist").empty();
                     $(".artist").append(res.message.body.track_list[0].track.artist_name);
